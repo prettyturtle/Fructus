@@ -20,6 +20,7 @@
 		6B9BDF1C2A8FD51500852166 /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BDF1B2A8FD51500852166 /* FruitDetailView.swift */; };
 		6B9BDF1E2A8FD7DF00852166 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BDF1D2A8FD7DF00852166 /* FruitHeaderView.swift */; };
 		6B9BDF202A8FD99800852166 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BDF1F2A8FD99800852166 /* SourceLinkView.swift */; };
+		6B9BDF222A8FDAEA00852166 /* FruitNutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9BDF212A8FDAEA00852166 /* FruitNutrientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		6B9BDF1B2A8FD51500852166 /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 		6B9BDF1D2A8FD7DF00852166 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		6B9BDF1F2A8FD99800852166 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
+		6B9BDF212A8FDAEA00852166 /* FruitNutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				6B9BDF192A8FD21100852166 /* FruitRowView.swift */,
 				6B9BDF1D2A8FD7DF00852166 /* FruitHeaderView.swift */,
 				6B9BDF1F2A8FD99800852166 /* SourceLinkView.swift */,
+				6B9BDF212A8FDAEA00852166 /* FruitNutrientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				6B9BDF1C2A8FD51500852166 /* FruitDetailView.swift in Sources */,
 				6B633AC92A8E610200DBB68C /* ContentView.swift in Sources */,
 				6B9BDF1E2A8FD7DF00852166 /* FruitHeaderView.swift in Sources */,
+				6B9BDF222A8FDAEA00852166 /* FruitNutrientView.swift in Sources */,
 				6B633ADB2A8E693B00DBB68C /* OnboardingView.swift in Sources */,
 				6B633ADE2A8E7AA200DBB68C /* FruitModel.swift in Sources */,
 				6B633AC72A8E610200DBB68C /* yc_FructusApp.swift in Sources */,

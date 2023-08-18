@@ -39,7 +39,6 @@ struct FruitNutrientView: View {
             } label: {
                 Text("Nutritional value per 100g")
             }
-
         } //: BOX
     }
 }

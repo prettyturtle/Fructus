@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @AppStorage("isOnboarding") var isOnboarding: Bool?
+    // MARK: - PROPERTIES
+    
+    @State private var isShowingSettings: Bool = false
     
     var fruits: [Fruit] = fruitsData
+    
+    // MARK: - BODY
     
     var body: some View {
         NavigationView {
@@ -27,10 +31,24 @@ struct ContentView: View {
             .listStyle(.plain)
             
             .navigationTitle("Fruits")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isShowingSettings = true
+                    } label: {
+                        Image(systemName: "slider.horizontal.3")
+                    }
+                }
+            }
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView()
+                    .presentationDragIndicator(.visible)
+            }
         } //: NAVIGATION
     }
 }
 
+// MARK: - PREVIEW
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

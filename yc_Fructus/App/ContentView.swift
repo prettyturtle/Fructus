@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
+//    @AppStorage("isOnboarding") var isOnboarding: Bool?
+    
+    var fruits: [Fruit] = fruitsData
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-                .onTapGesture {
-                    isOnboarding = true
+        NavigationView {
+            List {
+                ForEach(fruits.shuffled()) { fruit in
+                    FruitRowView(fruit: fruit)
+                        .padding(.vertical, 4)
                 }
-        }
-        .padding()
+            } //: LIST
+            .listStyle(.plain)
+            
+            .navigationTitle("Fruits")
+        } //: NAVIGATION
     }
 }
 

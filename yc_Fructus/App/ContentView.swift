@@ -45,6 +45,7 @@ struct ContentView: View {
                     .presentationDragIndicator(.visible)
             }
         } //: NAVIGATION
+        .navigationViewStyle(.stack)
     }
 }
 
